@@ -25,7 +25,8 @@ export async function main(event, context) {
     // - 'createdAt': currentUnix timestamp
     // -
     Key: {
-      userId: event.requestContext.identity.cognitoIdentityId
+      // userId: event.requestContext.identity.cognitoIdentityId
+      userId: event.pathParameters.id
     },
     UpdateExpression: `REMOVE expData[${data.index}]`
   };
