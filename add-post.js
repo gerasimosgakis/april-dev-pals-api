@@ -35,7 +35,6 @@ export async function main(event, context) {
       name: data.name,
       // avatar: data.avatar,
       text: data.text,
-      likes: [],
       comments: [],
       createdAt: Date.now
     }

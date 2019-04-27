@@ -150,6 +150,60 @@ functions:
           cors: true
           authorizer: aws_iam
 
+  get-post:
+    handler: get-post.main
+    events:
+      - http:
+          path: posts/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  delete-post:
+    handler: delete-post.main
+    events:
+      - http:
+          path: posts/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+  add-like:
+    handler: add-like.main
+    events:
+      - http:
+          path: posts/like/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  remove-like:
+    handler: remove-like.main
+    events:
+      - http:
+          path: posts/unlike/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  add-comment:
+    handler: add-comment.main
+    events:
+      - http:
+          path: posts/comment/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  delete-comment:
+    handler: delete-comment.main
+    events:
+      - http:
+          path: posts/comment/delete/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
 # Create our resources with separate CloudFormation templates
 resources:
   # API Gateway Errors
