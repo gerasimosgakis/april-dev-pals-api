@@ -39,7 +39,7 @@ export async function main(event, context) {
       bio: data.bio,
       githubusername: data.githubusername,
       expData: data.expData || [],
-      eduData: data.education || [],
+      eduData: data.eduData || [],
       linkedin: data.linkedin,
       facebook: data.facebook,
       youtube: data.youtube,

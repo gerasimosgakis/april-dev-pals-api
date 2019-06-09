@@ -33,7 +33,7 @@ export async function main(event, context) {
       userId: data.userId,
       postId: uuid.v1(),
       name: data.name,
-      // avatar: data.avatar,
+      avatar: data.avatar,
       text: data.text,
       comments: [],
       createdAt: Date.now
