@@ -204,6 +204,15 @@ functions:
           cors: true
           authorizer: aws_iam
 
+  add-message:
+    handler: add-message.main
+    events:
+      - http:
+          path: messages/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
 # Create our resources with separate CloudFormation templates
 resources:
   # API Gateway Errors

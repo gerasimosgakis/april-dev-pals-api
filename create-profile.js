@@ -45,6 +45,7 @@ export async function main(event, context) {
       youtube: data.youtube,
       instagram: data.instagram,
       twitter: data.twitter,
+      messages: data.messages || [],
       createdAt: Date.now()
     }
   };

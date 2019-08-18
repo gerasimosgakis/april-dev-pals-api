@@ -1,0 +1,11 @@
+{
+  "body": "{\"message\":{\"user\":\"79cba60d-8463-4015-92da-091384babbff\",\"text\":\"hello world\"}}",
+  "pathParameters": {
+    "id": "79cba60d-8463-4015-92da-091384babbff"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "79cba60d-8463-4015-92da-091384babbff"
+    }
+  }
+}
